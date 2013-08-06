@@ -1,0 +1,27 @@
+{
+  "name": "webworks",
+  "version": "0.0.1",
+  "preferGlobal": "true",
+  "description": "WebWorks command line interface tool",
+  "engines":{
+      "node":">=0.9.9"
+  },
+  "engineStrict":true,
+  "bin": {
+    "webworks": "./bin/webworks"
+  },
+  "scripts": {
+    "test": "jasmine-node --color spec"
+  },
+  "dependencies": {
+    "cordova":"*"
+  },
+  "devDependencies": {
+    "jasmine-node":"1.8.x"
+  },
+  "author": "Bryan Higgins",
+  "contributors": [
+    {"name": "Jeffrey Heifetz","email": "jheifetz@gmail.com"}
+  ],
+  "license": "Apache version 2.0"
+}
