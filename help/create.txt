@@ -1,0 +1,13 @@
+usage: webworks [--verbose] create <path> [id]
+
+description:
+   Creates the structure for a new project at the specified path.
+
+options:
+   path       directory name to create project in
+   id         application identifier
+
+example:
+   $ webworks create myapp com.acme.myapp
+   $ cd myapp
+   $ webworks run

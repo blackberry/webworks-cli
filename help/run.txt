@@ -1,0 +1,16 @@
+usage: webworks [--verbose] run [--devicepass] [--target=<id>] [-k | --keystorepass]
+                [--no-launch] [--no-uninstall] [--no-build]
+
+description:
+   Build the app and deploy it to a device. Devices connected by USB will be automatically detected.
+
+options:
+   -k, --keystorepass <password>    the password of signing key; needed for creating debug token
+   --devicepass <password>          device password
+   --target <name>                  specifies the pre-configured target device
+   --no-uninstall                   skip uninstall step
+   --no-launch                      skip launch step
+   --no-build                       skip build step, previously built BAR file will be used
+
+example:
+   $ webworks run

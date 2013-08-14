@@ -1,0 +1,23 @@
+usage: webworks plugin [command] [params]
+
+description:
+   Configure plugins for use in the current project
+
+commands:
+
+   add <id | path | uri>
+      Add a plugin by id or path
+
+   rm <id>
+      Remove a plugin by id
+
+   ls
+      List all of the plugins added to the project
+
+options:
+    id                              unique identifier of the plugin
+    path                            path to the plugin on the filesystem
+    uri                             remote location of the plugin
+
+example:
+   $ webworks plugin add com.blackberry.bbm.platform

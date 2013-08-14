@@ -1,0 +1,15 @@
+usage: webworks [--verbose] emulate [--devicepass] [--target=<id>] [-k | --keystorepass]
+                [--no-launch] [--no-uninstall] [--no-build]
+
+description:
+   Build the app and deploy it to a BlackBerry 10 Simulator.
+
+options:
+   --devicepass <password>          simulator password
+   --target <name>                  specifies the pre-configured target simulator
+   --no-uninstall                   skip uninstall step
+   --no-launch                      skip launch step
+   --no-build                       skip build step, previously built BAR file will be used
+
+example:
+   $ webworks run

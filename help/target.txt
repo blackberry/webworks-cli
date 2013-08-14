@@ -1,0 +1,26 @@
+usage: webworks target [command] [params]
+
+description:
+   Configure deployment targets for use with the run command
+
+commands:
+
+   add <name> <ip> [-t | --type <device | simulator>] [-p | --password <password>] [--pin <devicepin>]
+      Add a new target, or overwrite an existing target with the same name
+
+   remove <name>
+      Remove a previously configured target
+
+   No command specified
+      List all of the configured targets
+
+options:
+    name                            unique identifier for the target
+    ip                              ip address of the target
+    -t, --type <device | simulator> type of target, default is device
+    -p, --password <password>       target password
+    --pin <devicepin>               target PIN
+
+example:
+   $ webworks target add z10-wifi 192.168.2.2
+   $ webworks run --target=z10
