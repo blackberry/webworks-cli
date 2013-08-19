@@ -16,7 +16,8 @@
   },
   "dependencies": {
     "cordova":"*",
-    "shelljs":"0.1.2"
+    "shelljs":"0.1.2",
+    "optimist":"0.6.0"
   },
   "devDependencies": {
     "jasmine-node":"1.8.x"
