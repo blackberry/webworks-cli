@@ -21,5 +21,6 @@ module.exports = {
     version:    require("./lib/version"),
     create:     require("./lib/create"),
     plugin:     require("./lib/plugin"),
+    platform:   require("./lib/platform"),
     help:       require("./lib/help")
 };
