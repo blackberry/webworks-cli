@@ -1,7 +1,7 @@
 usage: webworks target [command] [params]
 
 description:
-   Configure deployment targets for use with the run command
+   Configure deployment targets for use with the run or emulate command
 
 commands:
 

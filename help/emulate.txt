@@ -1,4 +1,4 @@
-usage: webworks [--verbose] emulate [--devicepass] [--target=<id>] [-k | --keystorepass]
+usage: webworks [--verbose] emulate [--devicepass] [--target=<id>]
                 [--no-launch] [--no-uninstall] [--no-build]
 
 description:
@@ -12,4 +12,4 @@ options:
    --no-build                       skip build step, previously built BAR file will be used
 
 example:
-   $ webworks run
+   $ webworks emulate
