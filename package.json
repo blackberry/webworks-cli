@@ -16,8 +16,9 @@
   },
   "dependencies": {
     "cordova":"*",
-    "shelljs":"0.1.2",
-    "optimist":"0.6.0"
+    "optimist":"0.6.0",
+    "wrench": "1.3.9",
+    "async": "0.2.9"
   },
   "devDependencies": {
     "jasmine-node":"1.8.x"
