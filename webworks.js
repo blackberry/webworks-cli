@@ -22,5 +22,6 @@ module.exports = {
     create:     require("./lib/create"),
     plugin:     require("./lib/plugin"),
     platform:   require("./lib/platform"),
+    run:        require("./lib/run"),
     help:       require("./lib/help")
 };
