@@ -10,5 +10,6 @@ These commands may be used from within a project directory:
    run        build and deploy to a device
    emulate    build and deploy to a simulator
    plugin     add or remove plugins
+   serve      start a webserver to host project assets
 
 See 'webworks help <command>' for more information on a specific command.
