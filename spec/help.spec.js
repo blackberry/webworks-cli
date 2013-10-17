@@ -16,10 +16,25 @@
     specific language governing permissions and limitations
     under the License.
 */
-var path = require("path");
+var webworks = require('../webworks'),
+    fs = require("fs"),
+    path = require("path"),
+    HELP_PATH = path.join(__dirname, "..", "res", "help");
 
-module.exports = {
-    BB_PLUGINS_DIR: path.join(__dirname, "..", "..", "plugin"),
-    CORDOVA_BB_DIR: path.join(__dirname, "..", "..", "cordova-blackberry"),
-    CORDOVA_HELLO_WORLD_DIR: path.join(__dirname, "..", "..", "www")
-};
+describe('help', function() {
+    beforeEach(function () {
+        spyOn(fs, "readFileSync").andReturn({toString:function () {}});
+        spyOn(console, "log");
+    });
+
+    it('should require the default help with no arguments', function () {
+        webworks.help();
+        expect(fs.readFileSync).toHaveBeenCalledWith(HELP_PATH + path.sep + "default.txt");
+    });
+
+    it('should attempt to load the help for the argument provided', function () {
+        spyOn(fs, "existsSync");
+        webworks.help("foo");
+        expect(fs.existsSync).toHaveBeenCalledWith(HELP_PATH + path.sep + "foo.txt");
+    });
+});
