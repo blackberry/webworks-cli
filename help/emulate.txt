@@ -1,4 +1,4 @@
-usage: webworks [--verbose] emulate [--devicepass] [--target=<id>]
+usage: webworks [--verbose] emulate [--devicepass <password>] [--target <name>]
                 [--no-launch] [--no-uninstall] [--no-build]
 
 description:
@@ -9,7 +9,7 @@ options:
    --target <name>                  specifies the pre-configured target simulator
    --no-uninstall                   skip uninstall step
    --no-launch                      skip launch step
-   --no-build                       skip build step, previously built BAR file will be used
+   --no-build                       skip build step; previously built BAR file will be used
 
 example:
    $ webworks emulate
