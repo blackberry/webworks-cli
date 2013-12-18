@@ -23,6 +23,7 @@ module.exports = {
     plugin:     require("./lib/plugin"),
     platform:   require("./lib/platform"),
     run:        require("./lib/run"),
+    emulate:    require("./lib/emulate"),
     build:      require("./lib/build"),
     help:       require("./lib/help")
 };
