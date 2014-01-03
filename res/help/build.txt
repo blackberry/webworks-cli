@@ -12,7 +12,7 @@ options:
    -b, --buildId <num>              specifies the build number for signing (typically incremented from previous signing)
    -d, --web-inspector              enables webinspector (enabled by default in debug mode)
    -p, --params <params JSON file>  specifies additional parameters to pass to downstream tools
-   -ll, --loglevel <loglevel>       set the logging level (error, warn, verbose)
+   -l, --loglevel <loglevel>        set the logging level (error, warn, verbose)
 
 example:
    $ webworks create myapp
