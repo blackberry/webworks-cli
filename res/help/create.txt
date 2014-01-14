@@ -1,4 +1,4 @@
-usage: webworks [--verbose] create <path> [id]
+usage: webworks [--verbose] create <path> [id [name [template]]]
 
 description:
    Creates the structure for a new project at the specified path.
@@ -6,8 +6,10 @@ description:
 options:
    path       directory name to create project in
    id         application identifier
+   name       application name
+   template   directory containing alternative www/ folder
 
 example:
-   $ webworks create myapp com.acme.myapp
+   $ webworks create myapp com.acme.myapp "My App"
    $ cd myapp
    $ webworks run
