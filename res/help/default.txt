@@ -9,6 +9,7 @@ These commands may be used from within a project directory:
    build      package app into a BAR file
    run        build and deploy to a device
    emulate    build and deploy to a simulator
+   upgrade    upgrade blackberry10 platform
    plugin     add or remove plugins
    serve      start a webserver to host project assets
 

@@ -1,0 +1,16 @@
+usage: webworks upgrade
+
+description:
+   Upgrades the BlackBerry 10 core platform code.
+   
+   Note: This does not update plugins.
+
+         Plugins need to be updated individually,
+         using `webworks plugin rm ...` + `webworks plugin add ...`
+         Warning: plugins may drastically change their APIs between versions.
+
+example:
+   $ cd myapp
+   $ webworks platform check
+   ... blackberry10 @ v2.0.0 could be updated to: v2.0.1
+   $ webworks upgrade
