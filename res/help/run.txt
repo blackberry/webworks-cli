@@ -1,5 +1,5 @@
 usage: webworks [--verbose] run [--devicepass <password>] [--target <id>] [-k | --keystorepass <keypass>]
-                [--no-launch] [--no-uninstall] [--no-build]
+                [--no-launch] [--no-build]
 
 description:
    Build the app and deploy it to a device. Devices connected by USB will be automatically detected.
