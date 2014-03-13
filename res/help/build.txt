@@ -10,9 +10,9 @@ options:
    --release                        build in release mode to sign the resulting BAR file
    -k, --keystorepass <keypass>     signing key password
    -b, --buildId <num>              specifies the build number for signing (typically incremented from previous signing)
-   -d, --web-inspector              enables webinspector (enabled by default in debug mode)
    -p, --params <params JSON file>  specifies additional parameters to pass to downstream tools
    -l, --loglevel <loglevel>        set the logging level (error, warn, verbose)
+   --web-inspector                  enables webinspector (enabled by default in debug mode)
 
 example:
    $ webworks create myapp
