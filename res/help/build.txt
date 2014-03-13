@@ -1,6 +1,6 @@
 usage: webworks [--verbose] build [--debug] [--release] [-k | --keystorepass <keypass>]
                 [-b | --buildId <number>] [-p | --params <json>] 
-                [-ll | --loglevel <level>] [--web-inspector]
+                [-l | --loglevel <level>] [--web-inspector]
 
 description:
    Package app into a BAR file.
