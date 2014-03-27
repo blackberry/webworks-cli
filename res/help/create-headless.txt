@@ -1,0 +1,13 @@
+usage: webworks [--verbose] create-headless <path>
+
+description:
+   Creates the structure for a new headless project at the specified path.
+   This project will contain a headless component in addition to the standard web component.
+
+options:
+   path       directory name to create project in
+
+example:
+   $ webworks create-headless myapp
+   $ cd myapp
+   $ webworks run

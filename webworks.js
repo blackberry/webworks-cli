@@ -18,12 +18,13 @@
 */
 
 module.exports = {
-    version:    require("./lib/version"),
-    create:     require("./lib/create"),
-    plugin:     require("./lib/plugin"),
-    platform:   require("./lib/platform"),
-    run:        require("./lib/run"),
-    emulate:    require("./lib/emulate"),
-    build:      require("./lib/build"),
-    help:       require("./lib/help")
+    version:        require("./lib/version"),
+    create:         require("./lib/create"),
+    createHeadless: require("./lib/create-headless"),
+    plugin:         require("./lib/plugin"),
+    platform:       require("./lib/platform"),
+    run:            require("./lib/run"),
+    emulate:        require("./lib/emulate"),
+    build:          require("./lib/build"),
+    help:           require("./lib/help")
 };

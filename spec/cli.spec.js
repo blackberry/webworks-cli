@@ -82,14 +82,30 @@ describe("webworks cli", function () {
             spyOn(webworks, "create");
         });
 
-        it("will call cretae for create command", function () {
+        it("will call create for create command", function () {
             new CLI(["node", "webworks", "create"]);
             expect(webworks.create).toHaveBeenCalled();
         });
 
-        it("will call cretae with all args except --verbose", function () {
+        it("will call create with all args except --verbose", function () {
             new CLI(["node", "webworks","--verbose", "create", "one", "-d", "two", "three"]);
             expect(webworks.create).toHaveBeenCalledWith("one", "-d", "two", "three");
+        });
+    });
+
+    describe("create-headless", function () {
+        beforeEach(function () {
+            spyOn(webworks, "createHeadless");
+        });
+
+        it("will call create-headless for create-headless command", function () {
+            new CLI(["node", "webworks", "create-headless"]);
+            expect(webworks.createHeadless).toHaveBeenCalled();
+        });
+
+        it("will call create-headless with all args except --verbose", function () {
+            new CLI(["node", "webworks","--verbose", "create-headless", "appPath"]);
+            expect(webworks.createHeadless).toHaveBeenCalledWith("appPath");
         });
     });
 
