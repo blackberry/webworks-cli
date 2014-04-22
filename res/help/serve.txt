@@ -1,10 +1,10 @@
-usage: webworks [--verbose] serve [platform]
+usage: webworks [--verbose] serve [port]
 
 description:
    Start a webserver to host project assets.
 
 options:
-   platform                         the target platform, defaults to blackberry10
+   port                          TCP port to open server on
 
 example:
    $ webworks serve
