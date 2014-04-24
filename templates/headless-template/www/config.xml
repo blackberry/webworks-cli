@@ -19,6 +19,8 @@
             <entryPoint id="HeadlessService">
                 <name>Headless Service</name>
                 <entryPointType>Qnx/Elf</entryPointType>
+                <permission system="true">_sys_run_headless</permission>
+                <permission>post_notification</permission>
             </entryPoint>
 
             <!-- see https://developer.blackberry.com/native/documentation/cascades/device_platform/headless_apps/create_headless_app.html#addinvocationframeworksupportfortriggers -->
@@ -42,9 +44,5 @@
                 <entry-point-id>HeadlessUI</entry-point-id>
             </invoke-target>
         </config-file>
-        <rim:permissions>
-            <rim:permit system="true">_sys_run_headless</rim:permit>
-            <rim:permit>post_notification</rim:permit>
-        </rim:permissions>
     </platform>
 </widget>
