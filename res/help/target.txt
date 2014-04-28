@@ -15,11 +15,11 @@ commands:
       List all of the configured targets
 
 options:
-    name                            unique identifier for the target
-    host                            IP address or hostname of the target
-    -t, --type <device | simulator> type of target, default is device
-    -p, --password <password>       target password
-    --pin <devicepin>               target PIN
+   name                            unique identifier for the target
+   host                            IP address or hostname of the target
+   -t, --type <device | simulator> type of target, default is device
+   -p, --password <password>       target password
+   --pin <devicepin>               target PIN
 
 example:
    $ webworks target add z10-wifi 192.168.2.2

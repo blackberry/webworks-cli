@@ -8,16 +8,20 @@ commands:
    add <id | path | uri>
       Add a plugin by id or path
 
-   rm <id>
+   remove <id>
       Remove a plugin by id
 
-   ls
+   list
       List all of the plugins added to the project
 
 options:
-    id                              unique identifier of the plugin
-    path                            path to the plugin on the filesystem
-    uri                             remote location of the plugin
+   id                              unique identifier of the plugin
+   path                            path to the plugin on the filesystem
+   uri                             remote location of the plugin
+
+aliases:
+   ls => list
+   rm => remove
 
 example:
    $ webworks plugin add com.blackberry.bbm.platform
