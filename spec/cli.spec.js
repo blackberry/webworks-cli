@@ -21,7 +21,15 @@ var CLI = require("../lib/cli"),
     cordova = require("cordova"),
     path = require("path"),
     conf = require("../lib/utils/conf"),
-    cordovaUtils = require(path.join(conf.NODE_MODULES_DIR,'cordova/src/util'));
+    cordovaUtils;
+
+try {
+    cordovaUtils            = require(path.join(conf.NODE_MODULES_DIR, 'cordova', 'node_modules', 'cordova-lib', 'src', 'cordova', 'util'));
+} catch (e) {
+    cordovaUtils            = require(path.join(conf.NODE_MODULES_DIR, 'cordova', 'src', 'util'));
+}
+ 
+
 
 describe("webworks cli", function () {
 
