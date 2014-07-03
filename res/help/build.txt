@@ -1,6 +1,6 @@
-usage: webworks [--verbose] build [--debug] [--release] [-k | --keystorepass <keypass>]
-                [-b | --buildId <number>] [-p | --params <json>] 
-                [-l | --loglevel <level>] [--web-inspector]
+usage: webworks [--verbose] build [--debug | --release [--buildId <num>]]
+                [--keystorepass <keypass>] [--params <json>]
+                [--loglevel <level>] [--web-inspector]
 
 description:
    Package app into a BAR file.
@@ -9,7 +9,9 @@ options:
    --debug                          build in debug mode
    --release                        build in release mode to sign the resulting BAR file
    -k, --keystorepass <keypass>     signing key password
-   -b, --buildId <num>              specifies the build number for signing (typically incremented from previous signing)
+   -b, --buildId <num>              specifies the build number for signing, used
+                                    with --release flag only (typically incremented
+                                    from previous signing)
    -p, --params <params JSON file>  specifies additional parameters to pass to downstream tools
    -l, --loglevel <loglevel>        set the logging level (error, warn, verbose)
    --web-inspector                  enables webinspector (enabled by default in debug mode)
